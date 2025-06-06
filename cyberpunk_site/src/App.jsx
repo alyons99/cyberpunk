@@ -9,7 +9,44 @@ function App() {
 
   return (
     <>
-    <Item_Card/>
+    <div class="card-container">
+    <Item_Card 
+      src="https://placehold.co/200"
+      name="Zetatech Parraline 5750"
+      type="Cyberdeck"
+      description="Military-grade cyberdeck with enhanced ICE-breaking capabilities. Comes with pre-installed demon programs and hardened security protocols."
+      />
+    <Item_Card 
+      src="https://placehold.co/200"
+      name="Airhypo"
+      type="Consumable"
+      description="Easy to use drug distribution platform."
+      />
+          <Item_Card 
+      src="https://placehold.co/200"
+      name="Airhypo"
+      type="Consumable"
+      description="Easy to use drug distribution platform."
+      />
+          <Item_Card 
+      src="https://placehold.co/200"
+      name="Airhypo"
+      type="Consumable"
+      description="Easy to use drug distribution platform."
+      />
+          <Item_Card 
+      src="https://placehold.co/200"
+      name="Airhypo"
+      type="Consumable"
+      description="Easy to use drug distribution platform."
+      />
+          <Item_Card 
+      src="https://placehold.co/200"
+      name="Airhypo"
+      type="Consumable"
+      description="Easy to use drug distribution platform."
+      />
+    </div>
      </>
   )
 }
