@@ -9,7 +9,7 @@
   background: black;
   border: 2px outset white;
   box-shadow: 2px 2px 0px #808080, 4px 4px 0px #404040;
-  font-family: 'MS Sans Serif', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 11px;
   height: 350px;
   display: flex;
@@ -96,7 +96,8 @@
 
 .item-selectors-btn{
   height: 30px;
-  font-family: 'MS Sans Serif', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bolder ;
   background: white;
   border: 1px outset #c0c0c0;
   font-size: 20px;
