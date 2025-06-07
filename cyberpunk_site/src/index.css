@@ -1,9 +1,8 @@
 /* Retro Computer Popup Styling */
 .card-container{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 10px;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .item-card {
@@ -12,18 +11,20 @@
   box-shadow: 2px 2px 0px #808080, 4px 4px 0px #404040;
   font-family: 'MS Sans Serif', sans-serif;
   font-size: 11px;
-  flex: 1;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
   color:white;
   display: inline-block;
 }
 
 
 .item-card-header {
-  padding: 2px 4px;
+  padding: 1px 1px;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -58,7 +59,7 @@
 
 
 .item_card_image{
-  max-width: 75%;
+  max-width: 50%;
   border: 1px solid white;
 }
 
@@ -66,30 +67,57 @@
   max-width: 75%;
   justify-self: center;
   border: 1px solid white;
-  padding: 5px;
+  padding: 4px;
 }
 
-.item_card_type{
+.item_card_price{
   max-width: 75%;
   justify-self: center;
   border: 1px solid white;
-  padding: 5px;
+  padding: 2px;
 }
 
 .item_card_description{
   max-width: 75%;
   justify-self: center;
   border: 1px solid white;
-  padding: 5px;
+  padding: 2px;
 }
 
-.item_card_type:hover {
+.item_card_price:hover {
+  transform: translate3D(0,-1px,0) scale(1.03);
+  cursor: pointer;
+  color:red;
+}
+
+
+
+
+
+.item-selectors-btn{
+  height: 30px;
+  font-family: 'MS Sans Serif', sans-serif;
+  background: white;
+  border: 1px outset #c0c0c0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 2px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.item-selectors-btn:hover{
   transform: translate3D(0,-1px,0) scale(1.03);
   cursor: pointer;
 }
 
-
+.item-selectors-div{
+  display:inline-block;
+  
+}
 
 body{
-  background-color: gray;
+  background-color: black;
 }
